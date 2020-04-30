@@ -39,3 +39,9 @@ spec:
                 configMapKeyRef:
                   name: pal-tracker
                   key: welcome.message
+
+            - name: SPRING_DATASOURCE_HIKARI_MAXIMUMPOOLSIZE
+              valueFrom:
+                configMapKeyRef:
+                  name: pal-tracker
+                  key: spring.datasource.hikari.maximumpoolsize
